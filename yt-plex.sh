@@ -45,7 +45,7 @@ do
                 episode_number="S01E$count"
             fi
             
-            yt-dlp -f mp4 -P "$channel_path/Season 1" -o "$episode_number - %(title)s.%(ext)s" --break-on-existing --download-archive "$channel_path"/archive.txt --playlist-reverse --playlist-end 1 --embed-thumbnail --embed-metadata -i -w "$url"
+            yt-dlp -P "$channel_path/Season 1" -o "$episode_number - %(title)s.%(ext)s" -S ext:mp4:m4a --break-on-existing --download-archive "$channel_path"/archive.txt --playlist-reverse --playlist-end 1 --embed-thumbnail --embed-metadata -i -w "$url"
         fi
 done
 
