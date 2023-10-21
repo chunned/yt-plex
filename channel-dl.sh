@@ -22,4 +22,4 @@ profile_path="$channel_path/$profile_photo"
 mv "$profile_path" "$channel_path/show.jpg"
 
 mkdir "$channel_path/Season 1"
-yt-dlp -f mp4 -P "$channel_path" -o "s01e%(autonumber)02d - %(title)s.%(ext)s" --download-archive "$channel_path"/archive.txt --playlist-reverse --embed-thumbnail --embed-metadata -i -w "$channel_url"
+yt-dlp -f mp4 -P "$channel_path/Season 1" -o "s01e%(autonumber)02d - %(title)s.%(ext)s" --download-archive "$channel_path"/archive.txt --playlist-reverse --embed-thumbnail --embed-metadata -i -w "$channel_url"
