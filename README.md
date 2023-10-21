@@ -20,4 +20,4 @@ Set your desired download location on **line 6** of the scripts
 
 Create a new Plex TV library and point it to your download directory. In `Advanced`, set `Agent` to `Personal Media Shows`. Scroll down to `Seasons` and select `Hide for single-season series`. 
 
-Now, add `yt-plex.sh` as a cron job. Run `crontab -e` and append a line like `* * * * * /path/to/repo/yt-dl.sh`. You can use [IT-Tools](https://it-tools.tech/crontab-generator) if you need help.
+Now, add `yt-plex.sh` as a cron job. Run `crontab -e` or `sudo vim /etc/crontab` depending on your system, and append a line like `* * * * * /path/to/repo/yt-dl.sh`. You can use [IT-Tools](https://it-tools.tech/crontab-generator) if you need help. Make sure to check that cron is able to find `yt-dlp` by putting it in /bin; `cp $(which yt-dlp) /bin/yt-dlp`
