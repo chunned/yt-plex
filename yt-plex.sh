@@ -34,7 +34,7 @@ do
             mkdir "$channel_path/Season 1"
             
             # Download the most recent video 
-            yt-dlp -f mp4 -P "$channel_path/Season 1" -o "S01E01 - %(title)s.%(ext)s" --embed-thumbnail --embed-metadata --playlist-end 1 -i -w "$url"
+            yt-dlp -P "$channel_path/Season 1" -o "S01E01 - %(title)s.%(ext)s" -S ext:mp4:m4a --embed-thumbnail --embed-metadata --playlist-end 1 -i -w "$url"
         else
             # Get count of existing mp4 files for episode number
             count=$(ls "$channel_path" | grep ".mp4$" | wc | awk '{ print $1 }')
