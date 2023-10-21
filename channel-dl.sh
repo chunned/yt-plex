@@ -1,6 +1,6 @@
 #!/bin/bash
 # Downloads an entire channel in episode/season format
-# Should be run BEFORE plextube.sh 
+# Should be run BEFORE yt-plex.sh 
 
 # CHANGE THIS TO YOUR DESIRED DOWNLOAD LOCATION
 video_dir=videos/
