@@ -1,11 +1,9 @@
 # yt-plex
-This is a script that downloads new YouTube videos from a list of channels you define and saves them in a structure compatible with Plex TV libraries. The only requirements are  and Plex.
+This is a script that downloads new YouTube videos from a list of channels you define and saves them in a structure compatible with Plex TV libraries. The only requirements are a Linux OS (could be easily modified for Windows, though), yt-dlp and Plex.
 
 The main script only downloads 1 video at a time - the newest one. It's meant to run as a cron job and only grab the newest video. If you want to download all videos from a channel, first run `channel-dl.sh`. 
 
 # Setup
-Requires Linux.
-
 Install [yt-dlp](https://github.com/yt-dlp/yt-dlp): `pip install --user yt-dlp` or `sudo apt install yt-dlp`
 
 Clone the repository: `git clone https://github.com/hcnolan/yt-plex.git`
